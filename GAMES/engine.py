@@ -4,7 +4,6 @@ from geo import play_geometric_progression_game
 
 
 def choose_game():
-    """Функция для выбора игры пользователем."""
     print("Выберите игру:")
     print("1 - Игра 'NOC'")
     print("2 - Игра 'Геометрическая прогрессия'")
@@ -16,7 +15,6 @@ def choose_game():
 
 
 def play_rounds(name, game_func):
-    """Функция для проведения 3 раундов игры."""
     for round_num in range(1, 4):
         print(f"\nРаунд {round_num}:")
         game_func(name)
@@ -24,8 +22,8 @@ def play_rounds(name, game_func):
 
 
 def main():
-    name = greet_user()  # Приветствие и запрос имени пользователя
-    game_choice = choose_game()  # Выбор игры
+    name = greet_user()  
+    game_choice = choose_game() 
 
     if game_choice == '1':
         print(f"Вы выбрали игру 'NOC'. Удачи, {name}!")
